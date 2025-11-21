@@ -1,22 +1,96 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="" />
+        <meta name="generator" content={Astro.generator} />
+        <title>UAS VIRTUAL</title>
+    </head>
+    <body>
+        <header id="top">
+			<img src="/UAS_logo.png" id="Logo_UAS" width="130" height="130"/>
+			<img src="/logouas2.png" id="Logo_UAS_Virtual" width="170" height="130"/>
+            <h1>UNIVERSIDAD AUTONOMA DE SINALOA</h1>
+			<h2>UAS VIRTUAL</h2>
+        </header>
+
+        <nav id="navbar" aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/facultad">Facultad</a></li>
+                <li><a href="/oferta_educativa">Oferta Educativa</a></li>
+                <li><a href="/departamentos">Departamentos</a></li>
+                <li><a href="/comunidad">Comunidad</a></li>
+            </ul>
+        </nav>
+
+        <main id="container">
+            <slot />
+        </main>
+    </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    #top {
+        background: #111827;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #navbar {
+		background: #121f3b;
+		align-items: center;
+		display: flex;
+		justify-content: center;|
+    }
+
+    #navbar ul {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+		justify-content: center;
+    }
+
+    #navbar a {
+        color: #e5e7eb;
+        text-decoration: none;
+        padding: 0.4rem 0.6rem;
+        border-radius: 6px;
+        transition: background-color 0.15s ease;
+		text-align: center;
+		display: block;
+    }
+
+    #navbar a:hover {
+        background: rgba(255,255,255,0.06);
+    }
+
+    #container {
+        padding: 1.25rem;
+        min-height: calc(100vh - 120px);
+        background: #f8fafc;
+    }
+	
+	#Logo_UAS {
+		float: left;
+		margin: 0 15px 0 15px;
+	}
+	
+	#Logo_UAS_Virtual {
+		float: right;
+		margin: 0 15px 0 15px;
 	}
 </style>
