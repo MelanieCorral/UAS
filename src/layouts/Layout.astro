@@ -8,23 +8,185 @@
     <meta name="generator" content={Astro.generator} />
 </head>
 <body>
-    <nav id="navbar" aria-label="Main navigation">
-        <div class="nav-left">
-            <img src="/UAS_logo.png" id="Logo_UAS" alt="UAS logo" />
-            <img src="/logouas2.png" id="Logo_UAS_Virtual" alt="UAS virtual" />
-            <h3>Universidad Autónoma de Sinaloa</h3>
-        </div>
+ <nav class="navbar">
+  <div class="navbar-content">
+    <ul class="navbar-menu">
+      <li>
+        <a href="/">
+          <img src="/home.png" alt="Inicio" class="icon" />
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#">Quienes somos?</a>
+        <ul class="dropdown-menu">
+          <li><a href="/historia">Historia</a></li>
+          <li><a href="/instalaciones">Instalaciones</a></li>
+          <li><a href="/organigrama">Organigrama</a></li>
+          <li><a href="/directorio">Directorio</a></li>
+          <li><a href="/normativa">Normativa Interna</a></li>
+        </ul>
+      </li>
+    <li class="dropdown">
+  <a href="#">Oferta académica</a>
 
-        <div class="nav-right">
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/facultad">Facultad</a></li>
-                <li><a href="/oferta_educativa">Oferta Educativa</a></li>
-                <li><a href="/departamentos">Departamentos</a></li>
-                <li><a href="/comunidad">Comunidad</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Nivel 1 -->
+  <ul class="dropdown-menu">
+
+    <!-- Nivel 2 -->
+    <li class="dropdown">
+      <a href="#">Licenciatura</a>
+
+      <ul class="dropdown-menu">
+
+        <!-- Nivel 3 -->
+        <li class="dropdown">
+          <a href="#">Modalidad escolarizada</a>
+
+          <ul class="dropdown-menu">
+
+            <!-- Nivel 4 -->
+            <li class="dropdown">
+              <a href="#">Licenciatura en Ciencias de la Educación</a>
+
+              <ul class="dropdown-menu">
+
+                <!-- Nivel 5 -->
+                <li class="dropdown-menu">
+                    <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Plan de estudios</a></li>
+
+
+                </li>
+
+              </ul>
+            <li class="dropdown">
+              <a href="#">Licenciatura en Educacion Media en el Area de Español</a>
+
+              <ul class="dropdown-menu">
+
+                <!-- Nivel 5 -->
+                 <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Plan de estudios</a></li>
+
+              </ul>  
+            </li>
+             <li class="dropdown">
+              <a href="#">Licenciatura en Educacion Media en el Area de Matematicas</a>
+
+              <ul class="dropdown-menu">
+
+                <!-- Nivel 5 -->
+                 <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Plan de estudios</a></li>
+
+              </ul>  
+            </li>
+
+          </ul>
+        </li>
+        <!-- Nivel 3 -->
+        <li class="dropdown">
+          <a href="#">Modalidad Mixta (semiescolarizada)</a>
+
+          <ul class="dropdown-menu">
+
+            <!-- Nivel 4 -->
+            <li class="dropdown">
+              <a href="#">Licenciatura en Ciencias de la Educación</a>
+
+              <ul class="dropdown-menu">
+
+                <!-- Nivel 5 -->
+                <li class="dropdown-menu">
+                    <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Plan de estudios</a></li>
+
+
+                </li>
+
+              </ul>
+            <li class="dropdown">
+              <a href="#">Licenciatura en Educacion Media en el Area de Español</a>
+
+              <ul class="dropdown-menu">
+
+                <!-- Nivel 5 -->
+                 <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Plan de estudios</a></li>
+
+              </ul>  
+            </li>
+             <li class="dropdown">
+              <a href="#">Licenciatura en Educacion Media en el Area de Matematicas</a>
+
+              <ul class="dropdown-menu">
+
+                <!-- Nivel 5 -->
+                 <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Plan de estudios</a></li>
+
+              </ul>  
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#">Posgrado</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown">
+            <a href="#">Maestría en educación</a>
+                <ul class ="dropdown-menu">
+                    <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Convocatoria Maestria en educación 2024-2026</a></li>            
+                    <li><a href="#">Plan de estudios</a></li>            
+                    <li><a href="#">Lineas de generación y/o aplicación del conocimiento (LGAC)</a></li>            
+                    <li><a href="#">Núcleo académico básico de investigadores</a></li>            
+                    <li><a href="#">Costos e informes</a></li>            
+                    <li><a href="#">Normatividad</a></li>            
+                </ul>
+            </li>
+            <li class="dropdown">
+            <a href="#">Posgrado en educación</a>
+                <ul class ="dropdown-menu">
+                    <li><a href="#">Ingreso / egreso</a></li>
+                    <li><a href="#">Convocatoria 2024-2027</a></li>            
+                    <li><a href="#">Plan de estudios</a></li>            
+                    <li><a href="#">Lineas de generación y/o aplicación del conocimiento (LGAC)</a></li>            
+                    <li><a href="#">Núcleo académico básico de investigadores</a></li>            
+                    <li><a href="#">Costos e informes</a></li>            
+                    <li><a href="#">Normatividad</a></li>            
+                </ul>
+            </li>
+        </ul>
+    </li>
+     <li class="dropdown">
+        <a href="#">Educacion Continua</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Diplomados</a></li>
+        </ul>
+    </li>   
+  </ul>
+</li>
+
+
+      <li class="dropdown">
+        <a href="/estudiantes">Estudiantes</a>
+      </li>
+      <li>
+        <a href="/contacto">Contacto</a>
+      </li>
+    </ul>
+    <div class="navbar-logos">
+      <img src="/UAS_logo.png" alt="Logo UAS" class="navbar-logo" />
+      <div class="navbar-divider"></div>
+      <img src="/logouas2.png" alt="Logo FH" class="navbar-logo" />
+    </div>
+  </div>
+</nav>
 
     <main id="container">
         <slot />
@@ -49,10 +211,10 @@
         <div class="footer-section">
             <h4>Redes Sociales</h4>
             <div class="social-icons">
-                <a href="#" aria-label="Facebook"><img src="../../public/Redes_sociales/facebook.png" alt="Facebook"></a>
-                <a href="#" aria-label="X"><img src="../../public/Redes_sociales/x.png" alt="X"></a>
-                <a href="#" aria-label="Instagram"><img src="../../public/Redes_sociales/instagram.png" alt="Instagram"></a>
-                <a href="#" aria-label="YouTube"><img src="../../public/Redes_sociales/youtube.png" alt="YouTube"></a>
+                <a href="#" aria-label="Facebook"><img src="/Redes_sociales/facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="X"><img src="/Redes_sociales/x.png" alt="X"></a>
+                <a href="#" aria-label="Instagram"><img src="/Redes_sociales/instagram.png" alt="Instagram"></a>
+                <a href="#" aria-label="YouTube"><img src="/Redes_sociales/youtube.png" alt="YouTube"></a>
             </div>
         </div>
     </footer>
@@ -90,62 +252,137 @@
         min-height: 0; /* evitar overflow en flex */
     }
 
-    /* NAV */
-    #navbar{
-        background: var(--nav-bg);
-        color: var(--text);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        padding: 10px 20px;
-    }
 
-    .nav-left, .nav-right {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
+  .navbar {
+    background: #02427A;
+    color: #fff;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 
-    /* logo y tamaños — usa max-width para que sean responsivos */
-    #Logo_UAS, #Logo_UAS_Virtual {
-        max-width: 90px;
-        height: auto;
-        display: block;
-    }
+  .navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 80px;
+  }
 
-    /* Título dentro del nav */
-    #navbar h3 {
-        margin: 0;
-        font-size: 1.05rem;
-        color:#ffd700;
-        font-weight: 600;
-    }
+  .navbar-logos {
+    display: flex;
+    float: right;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
-    /* Menú (derecha) */
-    .nav-right ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-    }
+  .navbar-logo {
+    height: 80px;
+    width: auto;
+    display: block;
+  }
 
-    .nav-right a {
-        color: var(--text);
-        text-decoration: none;
-        padding: 0.35rem 0.6rem;
-        border-radius: 6px;
-        transition: background-color 0.15s ease, color 0.15s ease;
-        display: block;
-        white-space: nowrap;
-    }
+  .navbar-divider {
+    width: 2px;
+    height: 60px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 1px;
+  }
 
-    .nav-right a:hover {
-        background: rgba(255,255,255,0.06);
-        color: var(--text);
-    }
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar-menu > li {
+    position: relative;
+  }
+
+  .navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.08rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.35em 1.1em;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .navbar-menu a:hover,
+  .navbar-menu .dropdown:hover > a {
+    color: #02427A;
+    background: #FFC200;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #02427A;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  min-width: 210px;
+  z-index: 1000;
+  padding: 0.5em 0;
+}
+/* MOSTRAR SOLO EL PRIMER NIVEL EN HOVER */
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* SUBMENÚS DE SEGUNDO NIVEL EN ADELANTE */
+.dropdown-menu .dropdown-menu {
+  top: 0;
+  left: 100%;   /* SE DESPLAZAN A LA DERECHA */
+  border-radius: 8px;
+}
+
+/* MOSTRAR SOLO EL NIVEL CORRECTO EN HOVER */
+.dropdown-menu > .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+  .dropdown-menu li {
+    width: 100%;
+    top: 30%; 
+  }
+
+  .dropdown-menu a {
+    color: #fff;
+    background: none;
+    font-size: 1.02rem;
+    padding: 0.55em 1.3em;
+    border-radius: 0;
+    transition: background 0.2s, color 0.2s;
+    gap: 0;
+  }
+
+  .dropdown-menu a:hover {
+    color: #02427A;
+    background: #FFC200;
+    border-radius: 0 20px 20px 0;
+  }
 
     /* FOOTER */
     #footer {
