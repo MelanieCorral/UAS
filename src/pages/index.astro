@@ -22,7 +22,50 @@ import Contenedor from '../components/contenedor.astro';
 	</Contenedor>
 	<Contenedor>
 		<h2>Eventos</h2>
+		<h3>Nuestra comunidad educativa</h3>
+        <p>
+            La Facultad de Ciencias de la Educación está conformada por estudiantes, docentes, investigadores y personal administrativo comprometidos con la excelencia académica y el desarrollo integral. Juntos, promovemos valores, innovación y trabajo colaborativo para formar profesionales capaces de transformar la sociedad.
+        </p>
+        <p class="frase-ford">
+            "Reunirse es un comienzo, permanecer juntos es el progreso y trabajar juntos es el éxito." <br>
+            <span class="autor">- Henry Ford</span>
+        </p>
+        <img src="/comunidad.jpg" alt="Nuestra comunidad educativa" class="comunidad-img" />
+		<div class="eventos-grid">
+			<Contenedor class="evento">
+				<a href="https://www.facebook.com/photo/?fbid=122141172164189334&set=pcb.122141172632189334"><h3>Día internacional del libro</h3></a>
+				<p>Conmemoración celebrada cada 23 de abril a nivel mundial con el objetivo de fomentar la lectura.</p>
+				<img src="/evento1.jpg" alt="Día internacional del libro" class="evento-img" />
+			</Contenedor>
+			<Contenedor class="evento">
+				<a href="https://www.facebook.com/photo/?fbid=122139267914189334&set=a.122106244202189334"><h3>Coloquio de investigación educativa</h3></a>
+				<p>Participación de los alumnos de los alumnos de doctorado en sus proyectos de investigación.</p>
+				<img src="/evento2.jpg" alt="Coloquio de investigación educativa" class="evento-img" />
+			</Contenedor>
+			<Contenedor class="evento">
+				<h3>Segundo encuentro regional de cuerpos académicos y grupos de investigación en educación y Sociedad</h3>
+				<p>Cuerpos académicos, investigadores, estudiantes y profesionales, se reúnen para explorar nuevas perspectivas.</p>
+				<img src="/evento3.jpg" alt="Segundo encuentro regional de cuerpos académicos y grupos de investigación en educación y Sociedad" class="evento-img" />
+			</Contenedor>
+			<Contenedor class="evento">
+				<a href="https://www.facebook.com/photo/?fbid=122138185460189334&set=pcb.122138187860189334"><h3>Primer taller de poesía "Leer entre versos"</h3></a>
+				<p>Clausura de nuestro primer taller de poesía, donde se hizo presente el talento de nuestros alumnos.</p>
+				<img src="/evento4.jpg" alt="Primer taller de poesía 'Leer entre versos'" class="evento-img" />
+			</Contenedor>
+			<Contenedor class="evento">
+				<a href="https://www.youtube.com/watch?v=r_0JifefF-A"><h3>Premiación de nuestro primer concurso "Leer entre versos"</h3></a>
+				<p>Roberto Aguilar, primero lugar del Primer Concurso de Poesía “Leer entre versos”.</p>
+				<img src="/evento5.jpg" alt="Premiación" class="evento-img" />
+			</Contenedor>
+			<Contenedor class="evento">
+				<a href="https://www.facebook.com/photo/?fbid=122129540486189334&set=pcb.122129542262189334"><h3>14vo encuentro de experiencias de brigadistas de Servicio Social</h3></a>
+				<p>Participaciones de nuestros brigadistas de servicio social, donde nos presentan sus experiencias y logros.</p>
+				<img src="/evento6.jpg" alt="14vo encuentro de experiencias de brigadistas de Servicio Social" class="evento-img" />
+			</Contenedor>
+			<p class="frase">“Despierta la curiosidad en ti mismo y en los demás. Aprender no solo está en los libros, está en explorar el mundo con mente abierta y corazón dispuesto.”</p>
+		</div>
 	</Contenedor>
+
 </Layout>
 
 <style>
@@ -64,4 +107,64 @@ p {
     color: #34495e;
 }
 
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.evento h3 {
+    font-size: 1.3rem;
+    color: #0060b9;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.evento p {
+    font-size: 1rem;
+    color: #34495e;
+}
+.evento-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.frase {
+    grid-column: span 3;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    color: #003366;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.frase-ford {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    color: #0060b9;
+    margin: 2rem 0 1rem 0;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.frase-ford .autor {
+    font-size: 1.1rem;
+    color: #34495e;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.comunidad-img {
+    display: block;
+    margin: 2rem auto 0 auto;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
 </style>
