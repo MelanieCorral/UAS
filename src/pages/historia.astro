@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import contenedor from '../components/contenedor.astro'
+---
+
+<Layout>
+    <contenedor>
+        
+    <div class="content-box">
+        <h2>Historia</h2>
+
+        <p>
+El CISE se crea el 21 de octubre de 1981 mediante acuerdo 73 del Consejo Universitario. El CISE debe su existencia a lo que sería, al mismo tiempo, su antecedente histórico: el Plan de Perfeccionamiento del Personal Académico Universitario (PPPA). Los objetivos que orientaron su actividad al interior de la Universidad fueron: el fomento y desarrollo de la investigación educativa, la contribución a los procesos de innovación educativa, la reforma académica, la formación y actualización en el campo de las ciencias y técnicas de la educación.
+        </p>
+
+        <p>
+La segunda etapa del CISE se caracteriza por la operación de programas de Licenciatura y Posgrado, esto es la Maestría en Ciencias de la educación (1985), la Licenciatura en Ciencias de la Educación (1988), el Doctorado en Ciencias de la Educación (1996) y la Maestría en Educación y Nuevas Tecnologías (2002).
+        </p>
+
+        <p>
+La tercera fase se distinguió por la consolidación de los programas de licenciatura y posgrado; de los cursos y diplomados de formación y actualización de docentes y los trabajos de asesoría en materia de innovación curricular y de planeación institucional (Universidad Autónoma de Sinaloa, 2007).
+        </p>
+
+        <p>
+Dos años después, el CISE es reconocido como una Dependencia de Educación Superior (DES), por parte de la Subsecretaria de Educación Superior e Investigación Científica. Así también, el Doctorado en Educación fue evaluado por el Comité de Educación y Humanidades del Comité Interinstitucional para la Evaluación de la Educación Superior (CIEES), dicha aprobación fue condicionada al mejoramiento de la infraestructura, la publicación por parte de sus académicos y el incremento de acervos (Durán, 2006).
+        </p>
+
+        <p>
+El CISE que es el precedente de la FACE es el resultado de una política de formación de profesores, en 1978 se inició durante el rectorado de Franco [Eduardo Franco rector de la UAS de 1981 a 1985], la situación en la Universidad era muy caótica, la mayor parte de la planta había llegado a las aulas sin formación suficiente muchos de los profesores incluso sin el nivel de licenciatura.
+        </p>
+
+        <p>
+El Centro de Investigaciones y Servicios Educativos ofreció servicios por más de 26 años, tales como: actualización docente, investigación, planeación y diseño curricular. En mayo del 2007 se transformó en Unidad Académica de Ciencias de la Educación y posteriormente, en noviembre del mismo año, se transformó en Facultad de Ciencias de la Educación (FACE).
+        </p>
+
+        <p>
+Texto extraído de la tesis de Arnoldo Llanes Medina “La transición del Centro de Investigación y Servicios Educativos (CISE) de la Universidad Autónoma de Sinaloa (UAS) desde la óptica de los profesores”, Disponible en  
+        <a href="http://riaa.uaem.mx/handle/20.500.12055/1401" target="_blank">este enlace</a>.
+        </p>
+    </div>
+    </contenedor>
+</Layout>
+
+<style>
+/* Contenedor tipo tarjeta */
+.content-box {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    line-height: 1.75;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+/* Título estilo UAS */
+.content-box h2 {
+    font-size: 2rem;
+    color: #003366;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-left: 6px solid #0060b9;
+    padding-left: 12px;
+}
+
+/* Texto normal */
+.content-box p {
+    text-align: justify;
+    text-indent: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Enlaces */
+.content-box a {
+    color: #0060b9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content-box a:hover {
+    text-decoration: underline;
+}
+</style>

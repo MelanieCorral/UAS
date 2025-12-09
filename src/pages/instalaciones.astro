@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Contenedor from '../components/contenedor.astro'
+---
+
+<Layout>
+    <div class="contenedor-principal">
+        <div class="contenedor-flex">
+
+            <!-- CONTACTO -->
+            <Contenedor id="Contacto">
+                <h2>Contacto</h2>
+
+                <p><strong>Facultad de Ciencias de la Educación</strong></p>
+                <p><strong>Universidad Autónoma de Sinaloa</strong></p>
+
+                <p><strong>Dirección:</strong><br>
+                Ave. Cedros y Calle Sauces s/n,<br>
+                Fracc. Los Fresnos, Culiacán, Sinaloa, C.P. 80034</p>
+
+                <p><strong>Teléfonos:</strong><br>
+                667 753 6321<br>
+                667 729 1561</p>
+
+                <p><strong>Correo:</strong><br>
+                <a href="mailto:face@uas.edu.mx">face@uas.edu.mx</a></p>
+
+                <p><strong>Sitio Web:</strong><br>
+                <a href="https://face.uas.edu.mx" target="_blank">https://face.uas.edu.mx</a></p>
+            </Contenedor>
+
+            <!-- MAPA SIN API KEY -->
+            <Contenedor id="Maps">
+                <h2>Ubicación</h2>
+
+                <iframe
+                    width="100%"
+                    height="300"
+                    style="border:0; border-radius: 10px;"
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps?q=Facultad+de+Ciencias+de+la+Educaci%C3%B3n+UAS+Culiac%C3%A1n&output=embed">
+                </iframe>
+            </Contenedor>
+
+        </div>
+    </div>
+</Layout>
+
+<style>
+/* Contenedor principal centrado */
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedores uno junto al otro */
+.contenedor-flex {
+    display: flex;
+    gap: 1.5rem; /* Menos separación */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Individuales */
+#Contacto, 
+#Maps {
+    flex: 1 1 380px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Títulos */
+#Contacto h2,
+#Maps h2 {
+    font-size: 1.7rem;
+    color: #003366;
+    margin-bottom: 0.8rem;
+    border-left: 6px solid #0060b9;
+    padding-left: 10px;
+}
+
+/* Texto */
+#Contacto p,
+#Maps p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Enlaces */
+#Contacto a {
+    color: #0060b9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#Contacto a:hover {
+    text-decoration: underline;
+}
+</style>

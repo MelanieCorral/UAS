@@ -1,11 +1,67 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Carrusel from '../structures/carrusel.astro';
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Contenedor from '../components/contenedor.astro';
 ---
 
 <Layout>
-	<Carrusel />
+    <Carrusel />
+	<Contenedor>
+		<div class="contenedor-principal">
+			<div class="contenedor-flex">
+				<Contenedor id="Mision">
+					<h2>Misión</h2>
+					<p>Formar profesionales competentes en el campo de la educación, en los niveles de licenciatura y posgrado; desarrollar líneas de investigación pertinentes que aporten a la explicación y solución de problemas educativos; diseñar y aplicar programas de educación continua para profesionales de la educación; fomentar los valores en que reposa la ciudadanía democrática, a través de un modelo educativo y académico consolidado, una gestión y administración de calidad con procesos administrativos certificados y programas educativos acreditados, una planta académica altamente habilitada y certificada; todo ello con un espíritu de libertad y compromiso social.</p>
+				</Contenedor>
+				<Contenedor id="Vision">
+					<h2>Visión</h2>
+					<p>Al 2025, y en apego a su normatividad y a los lineamientos que se desprenden en materia de educación, la FACE opera un modelo educativo y académico consolidado; una gestión y administración de calidad, con procesos administrativos certificados; programas educativos acreditados; una planta académica altamente habilitada y certificada, organizada en CA consolidados y sus LGAC bien definidas y pertinentes al contexto; una comunidad estudiantil formada integralmente; egresados con habilidades tecnológicas y competencias laborales certificadas acordes con su mercado laboral; una sólida vinculación con los sectores productivos a través de la transferencia del conocimiento de frontera; la cultura, el deporte y la extensión con alto impacto social; todo ello en un marco de transparencia, rendición de cuentas y cuidado del medio ambiente.</p>
+				</Contenedor>
+			</div>
+		</div>
+	</Contenedor>
+	<Contenedor>
+		<h2>Eventos</h2>
+	</Contenedor>
 </Layout>
 
+<style>
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.contenedor-flex {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#Mision, 
+#Vision {
+    flex: 1 1 380px;    
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #003366;
+    font-weight: 700;
+    border-left: 6px solid #0060b9;
+    padding-left: 12px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+</style>
