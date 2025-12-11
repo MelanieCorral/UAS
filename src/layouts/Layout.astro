@@ -344,11 +344,42 @@
   display: block;
 }
 
-/* SUBMENÚS DE SEGUNDO NIVEL EN ADELANTE */
+/* Asegura que el li padre tenga posición relativa */
+.navbar-menu > li.dropdown,
+.dropdown-menu > li.dropdown {
+  position: relative;
+}
+
+/* Submenús de segundo nivel en adelante */
 .dropdown-menu .dropdown-menu {
+  position: absolute;
   top: 0;
-  left: 100%;   /* SE DESPLAZAN A LA DERECHA */
+  left: 100%;
+  margin-top: 0;
   border-radius: 8px;
+  min-width: 210px;
+  z-index: 1000;
+}
+
+/* Elimina cualquier desplazamiento vertical extra */
+.dropdown-menu li {
+  width: 100%;
+  /* No pongas top ni margin-top aquí */
+}
+
+/* Opcional: si el submenú sigue arriba, prueba esto */
+.dropdown-menu .dropdown:hover > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+}
+
+/* Asegura que los submenús estén alineados con el item padre */
+.dropdown-menu > .dropdown:hover > .dropdown-menu {
+  display: block;
+  top: 0;
+  left: 100%;
+  margin-top: 0; /* Puedes ajustar este valor si lo necesitas */
 }
 
 /* MOSTRAR SOLO EL NIVEL CORRECTO EN HOVER */
@@ -357,7 +388,6 @@
 }
   .dropdown-menu li {
     width: 100%;
-    top: 30%; 
   }
 
   .dropdown-menu a {
@@ -424,6 +454,13 @@
         #Logo_UAS, #Logo_UAS_Virtual { max-width: 64px; }
         #footer { padding: 20px; }
     }
+
+    .navbar-menu,
+.navbar-menu li,
+.dropdown-menu,
+.dropdown-menu li {
+    list-style: none !important;
+}
 </style>
 <style>
     .carrusel-container {
