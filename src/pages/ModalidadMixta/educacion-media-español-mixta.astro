@@ -1,0 +1,127 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Contenedor from "../../components/contenedor.astro";
+---
+
+<Layout title="Perfiles" description="Conoce los perfiles de nuestra organización.">
+    <Contenedor>
+        <h2>Licenciatura en Educación Media en el Área de Español (Modalidad Mixta)</h2>
+        <nav class="perfil-nav">
+            <a href="#ingreso">Perfil de Ingreso</a>
+            <a href="#egreso">Perfil de Egreso</a>
+            <a href="#plan">Plan de Estudios</a>
+            <a href="#mapa">Mapa Curricular</a>
+            <a href="#lgac">LGAC</a>
+            <a href="#academico">Núcleo Académico</a>
+            <a href="#costos">Costos e Informes</a>
+            <a href="#normatividad">Normatividad</a>
+        </nav>
+
+        <section id="ingreso">
+            <h3>Perfil de Ingreso</h3>
+            <ul>
+                <li>Interés por la docencia y la lengua española.</li>
+                <li>Capacidad de análisis, síntesis y comprensión lectora.</li>
+                <li>Habilidades de comunicación oral y escrita.</li>
+                <li>Disposición para el trabajo colaborativo y en equipo.</li>
+                <li>Actitud ética, responsable y de respeto a la diversidad.</li>
+                <li>Interés por la investigación y la innovación educativa.</li>
+                <li>Disposición para el autoaprendizaje y el uso de tecnologías educativas.</li>
+            </ul>
+        </section>
+
+        <section id="egreso">
+            <h3>Perfil de Egreso</h3>
+            <ul>
+                <li>Domina los contenidos disciplinares del área de Español para la educación media.</li>
+                <li>Diseña, implementa y evalúa estrategias didácticas innovadoras para la enseñanza del español.</li>
+                <li>Promueve el desarrollo de competencias comunicativas en los estudiantes.</li>
+                <li>Utiliza recursos tecnológicos y materiales didácticos en su práctica docente.</li>
+                <li>Participa en proyectos de investigación educativa y actualización profesional.</li>
+                <li>Actúa con ética, responsabilidad social y compromiso con la educación.</li>
+            </ul>
+        </section>
+
+        <section id="plan">
+            <h3>Plan de Estudios</h3>
+            <p>Consulta el plan de estudios actualizado en el siguiente enlace:</p>
+            <a href="https://face.uas.edu.mx/images/pdf/plan-estudios-educacion-media-espanol-mixta.pdf" class="perfil-link" target="_blank">Ver Plan de Estudios</a>
+        </section>
+
+        <section id="mapa">
+            <h3>Mapa Curricular</h3>
+            <p>Visualiza el mapa curricular de la licenciatura:</p>
+            <a href="https://face.uas.edu.mx/images/pdf/mapa-curricular-educacion-media-espanol-mixta.pdf" class="perfil-link" target="_blank">Ver Mapa Curricular</a>
+        </section>
+
+        <section id="lgac">
+            <h3>Líneas de Generación y/o Aplicación del Conocimiento (LGAC)</h3>
+            <ul>
+                <li>Didáctica de la lengua y la literatura.</li>
+                <li>Innovación educativa y tecnología aplicada a la enseñanza del español.</li>
+                <li>Procesos de comprensión y producción de textos.</li>
+            </ul>
+        </section>
+
+        <section id="academico">
+            <h3>Núcleo Académico</h3>
+            <p>Consulta el listado de profesores e investigadores que conforman el núcleo académico:</p>
+            <a href="https://face.uas.edu.mx/index.php/oferta-academica/licenciatura/modalidad-mixta-semiescolarizada/licenciatura-en-educacion-media-en-el-area-de-espanol/nucleo-academico" class="perfil-link" target="_blank">Ver Núcleo Académico</a>
+        </section>
+
+        <section id="costos">
+            <h3>Costos e Informes</h3>
+            <p>Para información sobre costos y proceso de inscripción, consulta el siguiente enlace:</p>
+            <a href="https://face.uas.edu.mx/index.php/oferta-academica/licenciatura/modalidad-mixta-semiescolarizada/licenciatura-en-educacion-media-en-el-area-de-espanol/costos-e-informes" class="perfil-link" target="_blank">Ver Costos e Informes</a>
+        </section>
+
+        <section id="normatividad">
+            <h3>Normatividad</h3>
+            <p>Consulta la normatividad vigente para el programa educativo:</p>
+            <a href="https://face.uas.edu.mx/index.php/oferta-academica/licenciatura/modalidad-mixta-semiescolarizada/licenciatura-en-educacion-media-en-el-area-de-espanol/normatividad" class="perfil-link" target="_blank">Ver Normatividad</a>
+        </section>
+    </Contenedor>
+
+    <style>
+        .perfil-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0 2.5rem 0;
+            justify-content: center;
+        }
+        .perfil-nav a {
+            background: #02427A;
+            color: #fff;
+            padding: 0.6em 1.2em;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+        }
+        .perfil-nav a:hover {
+            background: #FFC200;
+            color: #02427A;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            color: #02427A;
+            margin-bottom: 0.7rem;
+        }
+        .perfil-link {
+            color: #0060b9;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        ul {
+            margin-left: 1.5rem;
+        }
+    </style>
+</Layout>
