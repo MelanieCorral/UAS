@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Contenedor from "../components/contenedor.astro";
+---
+
+<Layout title="Perfiles" description="Conoce los perfiles de nuestra organización.">
+    <Contenedor>
+        <h2>Licenciatura en Ciencias de la Educación</h2>
+        <nav class="perfil-nav">
+            <a href="#ingreso">Perfil de Ingreso</a>
+            <a href="#egreso">Perfil de Egreso</a>
+            <a href="#plan">Plan de Estudios</a>
+            <a href="#mapa">Mapa Curricular</a>
+            <a href="#lgac">LGAC</a>
+            <a href="#academico">Núcleo Académico</a>
+            <a href="#costos">Costos e Informes</a>
+            <a href="#normatividad">Normatividad</a>
+        </nav>
+
+        <section id="ingreso">
+            <h3>Perfil de Ingreso</h3>
+            <ul>
+                <li>Interés por la educación y el desarrollo humano.</li>
+                <li>Capacidad de análisis y síntesis.</li>
+                <li>Habilidades de comunicación oral y escrita.</li>
+                <li>Disposición para el trabajo en equipo.</li>
+                <li>Actitud ética y responsable.</li>
+                <li>Interés por la investigación y la innovación educativa.</li>
+            </ul>
+        </section>
+
+        <section id="egreso">
+            <h3>Perfil de Egreso</h3>
+            <ul>
+                <li>Diseña, implementa y evalúa proyectos educativos innovadores.</li>
+                <li>Desarrolla investigación educativa pertinente.</li>
+                <li>Promueve el aprendizaje significativo y el desarrollo integral.</li>
+                <li>Aplica estrategias didácticas y tecnológicas en diversos contextos.</li>
+                <li>Actúa con ética, responsabilidad social y compromiso profesional.</li>
+                <li>Participa en equipos interdisciplinarios para la mejora educativa.</li>
+            </ul>
+        </section>
+
+        <section id="plan">
+            <h3>Plan de Estudios</h3>
+            <p>Consulta el plan de estudios actualizado en el siguiente enlace:</p>
+            <a href="#" class="perfil-link">Ver Plan de Estudios</a>
+        </section>
+
+        <section id="mapa">
+            <h3>Mapa Curricular</h3>
+            <p>Visualiza el mapa curricular de la licenciatura:</p>
+            <a href="#" class="perfil-link">Ver Mapa Curricular</a>
+        </section>
+
+        <section id="lgac">
+            <h3>Líneas de Generación y/o Aplicación del Conocimiento (LGAC)</h3>
+            <ul>
+                <li>Innovación educativa y tecnología.</li>
+                <li>Desarrollo humano y social.</li>
+                <li>Gestión y políticas educativas.</li>
+            </ul>
+        </section>
+
+        <section id="academico">
+            <h3>Núcleo Académico</h3>
+            <p>Consulta el listado de profesores e investigadores que conforman el núcleo académico:</p>
+            <a href="#" class="perfil-link">Ver Núcleo Académico</a>
+        </section>
+
+        <section id="costos">
+            <h3>Costos e Informes</h3>
+            <p>Para información sobre costos y proceso de inscripción, consulta el siguiente enlace:</p>
+            <a href="#" class="perfil-link">Ver Costos e Informes</a>
+        </section>
+
+        <section id="normatividad">
+            <h3>Normatividad</h3>
+            <p>Consulta la normatividad vigente para el programa educativo:</p>
+            <a href="#" class="perfil-link">Ver Normatividad</a>
+        </section>
+    </Contenedor>
+
+    <style>
+        .perfil-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0 2.5rem 0;
+            justify-content: center;
+        }
+        .perfil-nav a {
+            background: #02427A;
+            color: #fff;
+            padding: 0.6em 1.2em;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+        }
+        .perfil-nav a:hover {
+            background: #FFC200;
+            color: #02427A;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            color: #02427A;
+            margin-bottom: 0.7rem;
+        }
+        .perfil-link {
+            color: #0060b9;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        ul {
+            margin-left: 1.5rem;
+        }
+    </style>
+</Layout>
